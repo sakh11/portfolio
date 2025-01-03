@@ -1,0 +1,456 @@
+/* Imports */
+
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* /Imports */
+
+/* Fonts */
+.open-sans {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+
+  }
+/* /Fonts */
+
+/*  Colors 
+Body Color: #202124 (Black)
+Text Color: #F1F3F4 (Light Gray)
+Source: https://partnermarketinghub.withgoogle.com/brands/google-news/visual-identity/color-palette/
+
+
+*/
+
+/* Global Class Styles */
+.accent-yellow {
+    color: #FBBC04;
+    
+    transition: ease-in-out 0.2s;
+}
+
+.accent-yellow:hover {
+    color: #202124;
+}
+
+.button {
+    text-decoration: none;
+    color: #F1F3F4;
+    background: #FBBC04;
+    border-radius: 0.25rem;
+
+    font-size: 1rem;    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: ease-in-out 0.2s;
+}
+
+.button:hover {
+    background: #F1F3F4;
+    color: #202124;
+
+}
+/* /Global Class Styles */
+
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+/* /Universal Selector */
+
+/* Global Page Style */
+body {
+    min-height: 100vh;
+        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 10px;
+
+    background: #F1F3F4;
+    color: #202124;
+
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+}
+/* /Global Page Style */
+
+
+
+/* Header Style */
+.header {
+    min-width: 100%;
+    height: 5rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+
+    z-index: 1000;
+
+}
+
+nav {
+    max-width: 1728px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 3.4rem;
+    font-weight: 300;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    height: 100%;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    list-style: none;
+    
+    transition: ease-in-out 0.2s;
+
+    border-top: solid 0.4rem transparent;
+    border-bottom: solid 0.4rem transparent;
+}
+
+nav ul li a { 
+    text-decoration: none;
+    font-size: 1rem;
+    color: #202124;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0rem 2rem;
+
+}
+
+nav ul li:hover {
+    /* background: #F1F3F4; */
+    border-top: solid 0.4rem transparent;
+    border-bottom: solid 0.4rem #FBBC04;
+
+}
+/* /Header Style */
+
+
+
+/* Global Section Style */
+.section {
+    position: relative;
+
+}
+
+.section-content {
+    max-width: 1728px;
+    width: 100%;
+    height: 100%;
+
+}
+/* /Global Section Style */
+
+
+
+/* Hero Section Style */
+.hero-section {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.hero-content-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+    gap: 2rem;
+}
+
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    max-width: 40rem;
+
+    overflow: hidden;
+
+    border-radius: 1rem;
+    /* Undecided whether to have a border on the image */
+    /* border: solid 0.2rem #FBBC04; */
+    transition: transform ease-in-out 0.2s;
+}
+
+.hero-image-container:hover {
+    transform: scale(1.05);
+}
+
+.hero-image {
+    object-fit: cover;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.hero-title {
+    font-size: 8rem;
+    font-weight: 400;
+
+}
+
+.hero-button-container {
+    height: 4rem;
+    width: 100%;
+    gap: 1rem;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.hero-button {
+    padding: 0rem 2rem;
+    height: 4rem;
+}
+
+/* /Hero Section Style */
+
+
+
+/* Project Section Style */
+.project-section .section-content {
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 6rem;
+    
+}
+
+.project-card {
+    max-width: 20rem;
+    margin-bottom: 1rem;
+
+    border-radius: 0.5rem;
+    
+    /* Box shadow #27 acquired from https://getcssscan.com/css-box-shadow-examples */
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+
+    padding: 0.5rem;
+    
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    /* Final scale size to be decided */
+    transform: scale(1.5);
+    z-index: 999;
+
+    background: #F1F3F4;
+}
+
+.project-image {
+    overflow: hidden;
+    
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.25rem;
+}
+
+.project-image img {
+    object-fit: cover;
+}
+
+.project-text-content {
+    margin: 1rem 0;
+}
+
+.project-title {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.project-description {
+    font-size: 0.8rem;
+}
+
+.project-tags-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.project-tag {
+    background: #FBBC04;
+    color: #F1F3F4;
+
+    font-size: 0.8;
+
+    padding: 0.5rem 1rem;
+
+    border-radius: 0.25rem;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    gap: 0.5rem;
+
+}
+
+.project-button {
+    padding: 0.5rem 1rem;
+}
+/* /Project Section Style */
+
+
+
+/* About Page Style */
+
+/* /About Page Style */
+
+
+
+/* Contact Page Style */
+
+    /* Contact text Style */
+    .contact-content-container {
+        padding: 2rem;
+    }
+
+    .contact-title {
+        font-size: 4rem;
+        font-weight: 300;
+        
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-text {
+        font-size: 1.6rem;
+    }
+    /* /Contact text Style */
+
+    /* Contact Form Style */
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 10rem 0;
+    }
+
+    .contact-content-container {
+        width: 100%;
+    }
+
+    .contact-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .contact-form fieldset {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+
+        border: none;
+        background: none;
+
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .contact-form label {
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 80%;
+        padding: 0.5rem;
+        border: none;
+
+        border-radius: 0.25rem;
+        background: transparent;
+
+        font-size: 1.5rem;
+        
+        outline: none;
+    }
+
+    .contact-form input {
+        border-bottom: solid 0.1rem #202124;
+    }
+
+    .contact-form textarea {
+        resize: none;
+        max-height: 20rem;
+        min-height: 15rem;
+    }
+    /* /Contact Form Style */
+
+/* /Contact Page Style */
