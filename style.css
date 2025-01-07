@@ -451,6 +451,24 @@ nav ul li:hover {
         max-height: 20rem;
         min-height: 15rem;
     }
+
+    .contact-form input[type = submit] {
+        border: none;
+        border-radius: 0.5rem;
+
+        background: #FBBC04;
+        color: #F1F3F4;
+
+        cursor: pointer;
+        transition: ease-in-out 0.2s;
+    }
+
+    .contact-form input[type = submit]:hover {
+        transform: scale(1.1);
+        
+        background: #F1F3F4;
+        color: #202124;
+    }
     /* /Contact Form Style */
 
 /* /Contact Page Style */
