@@ -411,6 +411,11 @@ body {
 
     /* Project Cards */
     .project-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+
         max-width: 20rem;
         margin-bottom: 1rem;
 
@@ -564,6 +569,18 @@ body {
     
     /* /About Images */
 
+    /* Knowledge section */
+    .knowledge-tags {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 2rem;
+        margin-bottom: 2rem;
+
+        font-size: 16px;
+    }
+    /* /Knowledge section */
 
 /* /About Page Style */
 
