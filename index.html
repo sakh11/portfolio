@@ -13,7 +13,7 @@
 <body>
     
     <header class="header">
-        <nav class="navbar">
+        <nav class="container navbar">
                 <h1 class="header-logo"><span class="accent-yellow">S</span>tian <span class="accent-yellow">K</span>vinnesland</h1>
                 <ul>
                     <li><a href="#hero">HOME</a></li>
@@ -27,23 +27,21 @@
     <main class="main">
 
         <!-- Hero Section -->
-        <section class="section hero-section" id="hero">
-            <div class="section-content">
-                <div class="hero-content-container">
-                    <div class="hero-title-container">
-                        <h1 class="hero-subtitle">Hi, my name is<br><span class="hero-title accent-yellow">Stian Kvinnesland</span><br>and I am a fullstack developer.</h1>
-                        <div class="hero-button-container">
-                            <a class="button hero-button" target="_blank" href="https://github.com/sakh11">GITHUB</a>
-                            <a class="button hero-button" href="">RESUME</a>
-                            <a class="button hero-button" href="#contact">CONTACT ME</a>
-                        </div>
+        <header class="container hero" id="hero">
+            <div class="hero-content">
+                <div class="hero-title-container">
+                    <h1 class="hero-subtitle">Hi, my name is<br><span class="hero-title accent-yellow">Stian Kvinnesland</span><br>and I am a fullstack developer.</h1>
+                    <div class="hero-button-container">
+                        <a class="button hero-button" target="_blank" href="https://github.com/sakh11">GITHUB</a>
+                        <a class="button hero-button" href="">RESUME</a>
+                        <a class="button hero-button" href="#contact">CONTACT ME</a>
                     </div>
-                    <figure class="hero-image-container">
-                        <img class="hero-image" src="https://placehold.co/700x700" alt="Portrait of Stian Kvinnesland.">
-                    </figure>
                 </div>
+                <figure class="hero-image-container">
+                    <img class="hero-image" src="./assets/images/portrait.jpg" alt="Portrait of Stian Kvinnesland.">
+                </figure>
             </div>
-        </section>
+        </header>
         <!-- /Hero Section -->
 
         <!-- Projects Section -->
@@ -54,23 +52,20 @@
                     
                     <div class="project-card">
                         <figure class="project-card-image">
-                            <img src="./assets/images/craftsvilla-page-preview.png" alt="">
+                            <img src="./assets/images/employee-work-management-system-preview.png" alt="">
                         </figure>
                         <article class="project-card-text-content">
-                            <h3 class="project-card-title"><span class="accent-yellow">C</span>raftsVilla</h3>
-                            <p class="project-card-description">CraftsVilla was my first colaboration task where I worked together with other participants to the KodeHode programmer course.</p>
+                            <h3 class="project-card-title"><span class="accent-yellow">T</span>ime Management</h3>
+                            <p class="project-card-description">A comprehensive time management application built with Node.js, Express.js, and Supabase that helps employees track work hours, manage breaks, and improve productivity.</p>
                         </article>
                         <div class="project-card-tags-container">
-                            <div class="project-tag">HTML</div>
                             <div class="project-tag">CSS</div>
+                            <div class="project-tag">Express</div>
+                            <div class="project-tag">Supabase</div>
                             <div class="project-tag">Colaboration</div>
                         </div>
                         <div class="project-buttons">
-                            <a class="button project-button" href="">
-                                <img src="" alt="">
-                                Visit
-                            </a>
-                            <a class="button project-button" href="">
+                            <a class="button project-button" href="https://github.com/MainaPaina/Employee-Work-Management-System">
                                 <img src="" alt="">
                                 Github
                             </a>
@@ -78,23 +73,19 @@
                     </div>
                     <div class="project-card">
                         <figure class="project-card-image">
-                            <img src="./assets/images/wishlist-page-preview.png" alt="">
+                            <img src="./assets/images/date-management-preview.png" alt="">
                         </figure>
                         <article class="project-card-text-content">
-                            <h3 class="project-card-title"><span class="accent-yellow">W</span>ishlist</h3>
-                            <p class="project-card-description">A Project where I was tasked to create a Christmas wishlist and add a list of employees at the "Northpole"</p>
+                            <h3 class="project-card-title"><span class="accent-yellow">D</span>ate Management</h3>
+                            <p class="project-card-description">A full-featured ASP.NET Core MVC web application for managing user events, reminders, timesheets, and leave requests — with secure user authentication and role-based access."</p>
                         </article>
                         <div class="project-card-tags-container">
-                            <div class="project-tag">HTML</div>
-                            <div class="project-tag">CSS</div>
-                            <div class="project-tag">Solo</div>
+                            <div class="project-tag">HTML/CSS</div>
+                            <div class="project-tag">C#</div>
+                            <div class="project-tag">Colaboration</div>
                         </div>
                         <div class="project-buttons">
-                            <a class="button project-button" href="">
-                                <img src="" alt="">
-                                Visit
-                            </a>
-                            <a class="button project-button" href="">
+                            <a class="button project-button" href="https://github.com/Drakelid/dateManagementHTML">
                                 <img src="" alt="">
                                 Github
                             </a>
@@ -102,23 +93,18 @@
                     </div>
                     <div class="project-card">
                         <figure class="project-card-image">
-                            <img src="./assets/images/parallax-preview-image.png" alt="">
+                            <img src="./assets/images/MyGameList-preview.png" alt="">
                         </figure>
                         <article class="project-card-text-content">
-                            <h3 class="project-card-title"><span class="accent-yellow">P</span>arallax Project</h3>
-                            <p class="project-card-description">A project where I was tasked to create a website with a parallax effect, following a youtube video.</p>
+                            <h3 class="project-card-title"><span class="accent-yellow">M</span>yGameList</h3>
+                            <p class="project-card-description">MyGameList is a full-featured ASP.NET Core MVC web application for searching up video games, save games to various lists and keep a log over games you have played, games you want to play and games you are currently playing.</p>
                         </article>
                         <div class="project-card-tags-container">
-                            <div class="project-tag">HTML</div>
-                            <div class="project-tag">CSS</div>
-                            <div class="project-tag">Solo</div>
+                            <div class="project-tag">HTML/CSS</div>
+                            <div class="project-tag">C#</div>
                         </div>
                         <div class="project-buttons">
-                            <a class="button project-button" href="">
-                                <img src="" alt="">
-                                Visit
-                            </a>
-                            <a class="button project-button" href="">
+                            <a class="button project-button" href="https://github.com/sakh11/MyGameList">
                                 <img src="" alt="">
                                 Github
                             </a>
@@ -133,16 +119,14 @@
                             <p class="project-card-description">Project trying to complete a Front-end Mentor challenge.</p>
                         </article>
                         <div class="project-card-tags-container">
-                            <div class="project-tag">HTML</div>
-                            <div class="project-tag">CSS</div>
-                            <div class="project-tag">Solo</div>
+                            <div class="project-tag">HTML/CSS</div>
                         </div>
                         <div class="project-buttons">
-                            <a class="button project-button" href="">
+                            <a class="button project-button" href="https://sakh11.github.io/suite-landing-page/">
                                 <img src="" alt="">
                                 Visit
                             </a>
-                            <a class="button project-button" href="">
+                            <a class="button project-button" href="https://github.com/sakh11/suite-landing-page">
                                 <img src="" alt="">
                                 Github
                             </a>
@@ -150,23 +134,22 @@
                     </div>
                     <div class="project-card">
                         <figure class="project-card-image">
-                            <img src="https://placehold.co/350x200" alt="">
+                            <img src="./assets/images/parallax-preview-image.png" alt="">
                         </figure>
                         <article class="project-card-text-content">
-                            <h3 class="project-card-title"><span class="accent-yellow">P</span>roject 1</h3>
-                            <p class="project-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt rem temporibus magni voluptates, nostrum blanditiis ab ipsam deserunt asperiores. Officiis dolores molestias nulla aliquam.
+                            <h3 class="project-card-title"><span class="accent-yellow">P</span>arallax Project</h3>
+                            <p class="project-card-description">Web page created to practice parallax scrolling effects with multiple layers.
                             </p>
                         </article>
                         <div class="project-card-tags-container">
-                            <div class="project-tag">HTML</div>
-                            <div class="project-tag">CSS</div>
+                            <div class="project-tag">HTML/CSS</div>
                         </div>
                         <div class="project-buttons">
-                            <a class="button project-button" href="">
+                            <a class="button project-button" href="https://sakh11.github.io/parallax-page/">
                                 <img src="" alt="">
                                 Visit
                             </a>
-                            <a class="button project-button" href="">
+                            <a class="button project-button" href="https://github.com/sakh11/parallax-page">
                                 <img src="" alt="">
                                 Github
                             </a>
@@ -174,47 +157,22 @@
                     </div>
                     <div class="project-card">
                         <figure class="project-card-image">
-                            <img src="https://placehold.co/350x200" alt="">
+                            <img src="./assets/images/Frontend-Mentor-Recipe-preview.png" alt="">
                         </figure>
                         <article class="project-card-text-content">
-                            <h3 class="project-card-title"><span class="accent-yellow">P</span>roject 1</h3>
-                            <p class="project-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt rem temporibus magni voluptates, nostrum blanditiis ab ipsam deserunt asperiores. Officiis dolores molestias nulla aliquam.
+                            <h3 class="project-card-title"><span class="accent-yellow">R</span>ecipe Page</h3>
+                            <p class="project-card-description">Front-end Mentor challenge solution. A single-page recipe application built with HTML and CSS to view a detailed recipe with a responsive design.
                             </p>
                         </article>
                         <div class="project-card-tags-container">
-                            <div class="project-tag">HTML</div>
-                            <div class="project-tag">CSS</div>
+                            <div class="project-tag">HTML/CSS</div>
                         </div>
                         <div class="project-buttons">
-                            <a class="button project-button" href="">
+                            <a class="button project-button" href="https://sakh11.github.io/recipe-page/">
                                 <img src="" alt="">
                                 Visit
                             </a>
-                            <a class="button project-button" href="">
-                                <img src="" alt="">
-                                Github
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <figure class="project-card-image">
-                            <img src="https://placehold.co/350x200" alt="">
-                        </figure>
-                        <article class="project-card-text-content">
-                            <h3 class="project-card-title"><span class="accent-yellow">P</span>roject 1</h3>
-                            <p class="project-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sunt rem temporibus magni voluptates, nostrum blanditiis ab ipsam deserunt asperiores. Officiis dolores molestias nulla aliquam.
-                            </p>
-                        </article>
-                        <div class="project-card-tags-container">
-                            <div class="project-tag">HTML</div>
-                            <div class="project-tag">CSS</div>
-                        </div>
-                        <div class="project-buttons">
-                            <a class="button project-button" href="">
-                                <img src="" alt="">
-                                Visit
-                            </a>
-                            <a class="button project-button" href="">
+                            <a class="button project-button" href="https://github.com/sakh11/recipe-page">
                                 <img src="" alt="">
                                 Github
                             </a>
@@ -249,14 +207,11 @@
                             <h3 class="knowledge-subtitle subtitle">This is what I have learned so far</h3>
                         </header>
                         <div class="knowledge-tags">
-                            <div class="project-tag">HTML</div>
-                            <div class="project-tag">CSS</div>
-                            <div class="project-tag">HTML</div>
-                            <div class="project-tag">CSS</div>
-                            <div class="project-tag">HTML</div>
-                            <div class="project-tag">CSS</div>
-                            <div class="project-tag">HTML</div>
-                            <div class="project-tag">CSS</div>
+                            <div class="project-tag">HTML/CSS</div>
+                            <div class="project-tag">Javascript</div>
+                            <div class="project-tag">C#</div>
+                            <div class="project-tag">SQL</div>
+                            <div class="project-tag">Figma</div>
                         </div>
                         <p class="knowledge-paragraph paragraph-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum assumenda aut laborum, excepturi laboriosam facere cumque, officia ducimus repudiandae deleniti aliquam et quasi temporibus consequatur aspernatur similique tempore ad quae dolore obcaecati vitae repellendus exercitationem sequi? Autem tempore minima voluptatem quae fugiat, sunt quos, soluta magni sapiente rem commodi quaerat?</p>
                     </article>
